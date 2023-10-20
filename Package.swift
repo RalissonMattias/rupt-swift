@@ -20,7 +20,8 @@ let package = Package(
             dependencies: [.product(name: "LDSwiftEventSource", package: "swift-eventsource")],
             resources: [
                 .process("Resources")
-            ]
+            ],
+            linkedFramework("Localize_Swift")
         )
     ]
 )
